@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form label {
+    width: 100%;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="url"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    form label {
+        width: 25%;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="email"],
+    form input[type="url"] {
+        width: 75%;
+    }
+}
